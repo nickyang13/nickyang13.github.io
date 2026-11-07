@@ -121,8 +121,12 @@ ul.pts b{color:var(--ink);font-weight:600}
 .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0;padding:20px;background:var(--cream);border-radius:var(--r-md)}
 .strip img{width:100%;border-radius:10px;display:block;box-shadow:0 6px 18px -10px rgba(20,20,19,.35)}
 .app .pts{flex:1}
-.app .foot{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
-.store-note{margin:0;flex:1 1 14rem;max-width:36em;color:var(--slate);font-size:13.5px;line-height:1.55}
+.app .foot{margin-top:24px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:100%}
+.store-kicker{margin:0;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.store-links{display:flex;flex-wrap:wrap;gap:8px;max-width:100%}
+.store-links .btn{min-height:44px;padding:8px 14px;font-size:14px;line-height:1.2}
+.store-alias{margin:0;font-size:12.5px;line-height:1.45;color:var(--muted)}
+.store-note{margin:0;max-width:36em;color:var(--slate);font-size:13.5px;line-height:1.55}
 .app-sub-en{color:var(--faint);font-size:13.5px;margin-top:2px}
 
 /* skills */
@@ -293,7 +297,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <li>接入 StoreKit 2 订阅、会员权益与购买恢复。</li>
 </ul>
 <div class="tags"><span class="tag">SwiftUI</span><span class="tag">StoreKit 2</span><span class="tag">交互设计</span><span class="tag">国际化</span></div>
-<div class="foot"><a class="btn" href="https://apps.apple.com/jp/app/brandnewday/id6766146214" target="_blank" rel="noopener">App Store 查看 <span class="arr">↗</span></a><p class="store-note">国区上架手续办理中，暂仅提供海外版本。</p></div>
+<div class="foot">
+<p class="store-kicker">App Store</p>
+<div class="store-links">
+<a class="btn" href="https://apps.apple.com/jp/app/brandnewday/id6766146214" target="_blank" rel="noopener" aria-label="日本 App Store">日本 <span class="arr" aria-hidden="true">↗</span></a>
+<a class="btn" href="https://apps.apple.com/us/app/brandnewstudy/id6766146214" target="_blank" rel="noopener" aria-label="美国 App Store" aria-describedby="bnd-us-name">美国 <span class="arr" aria-hidden="true">↗</span></a>
+<a class="btn" href="https://apps.apple.com/hk/app/brandnewday/id6766146214" target="_blank" rel="noopener" aria-label="香港 App Store">香港 <span class="arr" aria-hidden="true">↗</span></a>
+<a class="btn" href="https://apps.apple.com/tw/app/brandnewday/id6766146214" target="_blank" rel="noopener" aria-label="台湾 App Store">台湾 <span class="arr" aria-hidden="true">↗</span></a>
+</div>
+<p class="store-alias" id="bnd-us-name">美国区商店名称为 BrandNewStudy。</p>
+<p class="store-note">国区上架手续办理中，暂仅提供海外版本。</p>
+</div>
 </article>
 <article class="card lift app reveal">
 <div class="app-head"><img src="images/opennote-icon.png" width="128" height="128" alt="OpenNote AI 图标" loading="lazy" decoding="async">
@@ -307,7 +321,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <li>独立交付界面与数据层、iPhone / iPad 适配、多语言界面、StoreKit 2 订阅及上架。</li>
 </ul>
 <div class="tags"><span class="tag">SwiftUI</span><span class="tag">SwiftData</span><span class="tag">Gemma 4</span><span class="tag">Qwen</span><span class="tag">Whisper</span><span class="tag">TTS</span></div>
-<div class="foot"><a class="btn" href="https://apps.apple.com/us/app/opennote-ai-local-assistant/id6776658629" target="_blank" rel="noopener">App Store 查看 <span class="arr">↗</span></a><p class="store-note">国区上架手续办理中，暂仅提供海外版本。</p></div>
+<div class="foot">
+<p class="store-kicker">App Store</p>
+<div class="store-links">
+<a class="btn" href="https://apps.apple.com/us/app/opennote-ai-local-assistant/id6776658629" target="_blank" rel="noopener" aria-label="美国 App Store">美国 <span class="arr" aria-hidden="true">↗</span></a>
+<a class="btn" href="https://apps.apple.com/hk/app/opennote-ai-local-assistant/id6776658629" target="_blank" rel="noopener" aria-label="香港 App Store">香港 <span class="arr" aria-hidden="true">↗</span></a>
+<a class="btn" href="https://apps.apple.com/tw/app/opennote-ai-local-assistant/id6776658629" target="_blank" rel="noopener" aria-label="台湾 App Store">台湾 <span class="arr" aria-hidden="true">↗</span></a>
+</div>
+<p class="store-note">国区上架手续办理中，暂仅提供海外版本。</p>
+</div>
 </article>
 </div>
 </div></section>
